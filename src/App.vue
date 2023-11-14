@@ -1,17 +1,14 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <div class="search-box">
-    <input
-      v-model="searchQuery"
-      @input="handleInput"
-      type="text"
-      placeholder="搜索"
-    />
-  </div>
+  <div>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <div class="search-box">
+      <input v-model="searchQuery" @input="handleInput" type="text" placeholder="搜索" />
+    </div>
 
-  <div class="recommend">
-    <More></More>
+    <div>
+      <More></More>
+    </div>
   </div>
 </template>
 
@@ -27,8 +24,8 @@ import More from './components/More.vue'
 export default {
   name: 'App',
   components: {
-      More
-   },
+    More
+  },
   data() {
     return {
       searchQuery: "",
@@ -61,5 +58,4 @@ input {
   outline: none;
   text-align: center;
 }
-
 </style>
